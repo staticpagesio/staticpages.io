@@ -38,6 +38,10 @@ defaults:
 plugins:
   - jekyll-assets
 
+# Collection
+collections:
+  - sections
+
 sass:
   sass_dir: _sass
 
