@@ -1,0 +1,64 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "StaticPages"
+email: "staticpagesio@gmail.com"
+
+# Social media profiles
+handle: "staticpagesio"
+
+# Handling Reading
+encoding: "utf-8"
+
+# Conversion
+markdown: "kramdown"
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Plugins
+plugins:
+  - jekyll-assets
+
+sass:
+  sass_dir: _sass
+
+# Assets
+assets:
+  compression: true
+  sources:
+    - _assets/scss
+  assets:
+    - "*.png"
+
+# Exclude from build
+exclude:
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+
+# Custom HTTP headers
+# webrick:
+#   headers:
+#     # Troy Hunt's "The 6-Step 'Happy Path' To HTTPS"
+#     Strict-Transport-Security: max-age=31536000
+#     Content-Security-Policy: upgrade-insecure-requests

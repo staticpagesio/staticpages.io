@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Meta-->
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Fully-managed platform for Jekyll">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Favicon-->
+  <link rel="icon" href="assets/img/favicon/144x144.png">
+
+  <!-- Title-->
+  <title>{{ site.title }}</title>
+
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700%7COpen+Sans:400,600,700" rel="stylesheet">
+
+  <!--Icon fonts-->
+  {% stylesheet "strokegap/style" %}
+  {% stylesheet "font-awesome.min" %}
+  {% stylesheet "linearicons/style" %}
+
+  <!-- Stylesheet-->
+  {% stylesheet "bundle" %}
+  {% stylesheet "style" %}
+  {% stylesheet "startup" %}
+</head>
+
+<body id="top">
+  <!--[if lt IE 8]>
+    <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <header class="header header-shadow header-shrink sticky-top bg-gray-v2">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand font-weight-bold" style="color: #273f5b;" href="/">staticpages.io</a>
+
+        <button class="navbar-toggler p-0" data-toggle="collapse" data-target="#navbarNav">
+          <div class="hamburger hamburger--spin js-hamburger">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scrollto="about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scrollto="features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scrollto="pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scrollto="platform">Platform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scrollto="faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scrollto="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+    <!-- END container-->
+  </header>
+  <!-- END header-inverse -->
+
+  <section id="about" class="u-py-md-250 u-flex-center" style="background:#ECF5FE url({% asset_path "startup/hero-banner" %}) no-repeat; background-size:cover; background-position: top center;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-5 mb-lg-0">
+          <h1 class="display-4 u-fw-600">
+            <span class="text-primary">Static sites</span> are great but managing them is frustrating at best...
+          </h1>
+          <p class="u-fs-22 u-lh-1_8 my-4 text-justify">
+            We fully manage projects powered by Jekyll for digital agencies, entrepreneurs and business owners - so you can keep focus
+            on creative part and let us to take care of the rest,
+            <span class="font-weight-bold">literally</span>.
+          </p>
+          <a href="" class="btn btn btn-rounded btn-primary u-w-170 u-mt-15">Hey, I'm in!</a>
+        </div>
+        <!-- END col-lg-7-->
+
+        <div class="col-lg-5">
+          <img src="https://jekyllrb.com/img/logo-2x.png" width="280">
+        </div>
+        <!-- END col-lg-5-->
+      </div>
+      <!-- END row-->
+    </div>
+    <!-- END container-->
+  </section>
+  <!-- END intro-hero-->
+
+  <section id="features" class="py-5 my-lg-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="h1" id="features">Features</h2>
+          <div class="u-h-4 u-w-50 bg-primary rounded mt-4 u-mb-70 mx-auto"></div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-4 u-mt-30">
+          <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+            <img class="u-w-100" src="{% asset_path "svg/file" %}" alt="">
+            <h4 class="u-fs-26 u-my-35">
+              Markdown/HTML
+            </h4>
+            <p class="mb-0">
+              Harness power of Jekyll to get
+              <strong>stunning static sites</strong> from plain-text documents
+              <strong>in minutes</strong> not weeks!
+            </p>
+          </div>
+        </div>
+        <!-- END col-md-4-->
+
+        <div class="col-md-4 u-mt-30">
+          <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+            <img class="u-w-100" src="{% asset_path "svg/layers" %}" alt="">
+            <h4 class="u-fs-26 u-my-35">
+              Themes
+            </h4>
+            <p class="mb-0">
+              Enjoy
+              <strong>endless creativity</strong> of Jekyll open-source community or bring your own
+              <strong>themes</strong>,
+              <strong>plugins</strong> and
+              <strong>customizations</strong>.
+            </p>
+          </div>
+        </div>
+        <!-- END col-md-4-->
+
+        <div class="col-md-4 u-mt-30">
+          <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+            <img class="u-w-100" src="{% asset_path "svg/alarm-clock" %}" alt="">
+            <h4 class="u-fs-26 u-my-35">
+              Publishing Schedule
+            </h4>
+            <p class="mb-0">
+              Seamless
+              <strong>automation</strong> to publish your content
+              <strong>on a schedule</strong> that fits
+              <strong>your business model</strong>,
+              <strong>time zone</strong> or
+              <strong>events</strong>!
+            </p>
+          </div>
+        </div>
+        <!-- END col-md-4-->
+
+        <div class="col-md-4 u-mt-30">
+          <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+            <img class="u-w-100" src="{% asset_path "svg/swiss-army-knife" %}" alt="">
+            <h4 class="u-fs-26 u-my-35">
+              All-inclusive Support
+            </h4>
+            <p class="mb-0">
+              Enjoy world-class technical support. Our team fixes any issue with your site - be it
+              <strong>CSS</strong>,
+              <strong>HTML</strong>,
+              <strong>JavaScript</strong> or something else.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 u-mt-30">
+          <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+            <img class="u-w-100" src="{% asset_path "svg/transfer" %}" alt="">
+            <h4 class="u-fs-26 u-my-35">
+              Git/SVN/Perforce
+            </h4>
+            <p class="mb-0">
+              Works with
+              <strong>popular source control solutions</strong> and if that's not your case, then drop us a note - we will add
+              <strong>support for yours</strong>.
+            </p>
+          </div>
+        </div>
+        <!-- END col-md-4-->
+
+        <div class="col-md-4 u-mt-30">
+          <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+            <img class="u-w-100" src="{% asset_path 'svg/cloudy' %}" alt="">
+            <h4 class="u-fs-26 u-my-35">
+              Docker Containers
+            </h4>
+            <p class="mb-0">
+              We use
+              <strong>Docker</strong> to embrace flexibility of
+              <strong>Jekyll</strong>, support
+              <strong>custom plugins</strong> +
+              <strong>modules</strong> and serve your pages faster.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- END row-->
+
+    </div>
+    <!-- END container-->
+  </section>
+
+  <section id="platform" class="py-5 my-lg-5 bg-gray-v2">
+    <div class="container">
+      <div class="col-12 text-center">
+        <h2 class="h1">We've Got You Covered</h2>
+        <div class="u-h-4 u-w-50 bg-primary rounded mt-4 u-mb-70 mx-auto"></div>
+      </div>
+
+      <div class="col-12">
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tab1_1">
+            <div class="row u-my-50 align-items-center">
+              <div class="col-md-6 mb-5">
+                <img src="{% asset_path "startup/s-2" %}" alt="">
+              </div>
+              <!-- END col-md-6 -->
+              <div class="col-md-6 text-justify">
+                <h2 class="mb-4">Nerds manage it all, so you don't have to</h2>
+                <p>
+                  We are a Jekyll expert that can help you with everything - content and design edits, domain registration and setup, Jekyll customizations and plugins maintenance, site analytics configuration, weekly updates, concierge migrations and automated backups.
+                </p>
+                <p>We are always here for you to help with questions or technical challenges standing in your way and here is how:
+                </p>
+                <ul class="list-unstyled u-fw-600 u-lh-2 u-mt-30">
+                  <li>
+                    <i class="fa fa-check text-primary mr-2"></i>Free in & out concierge migrations (all of them)</li>
+                  <li>
+                    <i class="fa fa-check text-primary mr-2"></i>Gallery with 100% working open-source themes (curated by us)</li>
+                  <li>
+                    <i class="fa fa-check text-primary mr-2"></i>All-inclusive tech support (included in all plans)</li>
+                  <li>
+                    <i class="fa fa-check text-primary mr-2"></i>Premier 1-on-1 support on Slack (for emergencies)</li>
+                  <li>
+                    <i class="fa fa-check text-primary mr-2"></i>Backups and more...</li>
+                </ul>
+              </div>
+              <!-- END col-md-6 -->
+            </div>
+            <!-- END row-->
+          </div>
+          <!-- END tab-pane-->
+        </div>
+        <!-- END tab-content-->
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-5 my-lg-5">
+    <div class="container">
+      <div class="col-12 text-center">
+        <h2 class="h1">Frequently Asked Questions</h2>
+        <div class="u-h-4 u-w-50 bg-primary rounded mt-4 u-mb-70 mx-auto"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 mt-4">
+          <div id="accordion2" role="tablist" class="bg-white box-shadow-v3">
+
+            <div class="accordion__faq">
+              <a class="accordion__title p-4" data-toggle="collapse" href="#acc1_2">
+                <i class="fa fa-angle-down mr-3"></i>
+                How do I migrate to StaticPages from the other provider, given I'm not a technical-savvy person?
+              </a>
+              <div id="acc1_2" class="collapse show" role="tabpanel" data-parent="#accordion2">
+                <div class="accordion__text">
+                  <p>We are very excited to offer
+                    <strong>Concierge Migrations</strong> for our customers at no additional charge (included in all plans). Our
+                    migration experts will take care of all technical details when you move in or out, at no charge for you.</p>
+                  <p>All migrations come with a detailed report of what was done and how for an each step and move your site
+                    gracefully to keep downtime (if any) to the minimal.</p>
+                  <p>We assign a temporary domain to your site during the migration and ensure everything works flawlessly before
+                    going live.</p>
+                </div>
+              </div>
+            </div>
+            <!-- END accordion__faq-->
+
+            <div class="accordion__faq">
+              <a class="accordion__title p-4" data-toggle="collapse" href="#acc2_2">
+                <i class="fa fa-angle-down mr-3"></i>
+                How do I fix these technical issues I'm running into with my new Jekyll project?
+              </a>
+              <div id="acc2_2" class="collapse" role="tabpanel" data-parent="#accordion2">
+                <div class="accordion__text">
+                  <p>Like any software, your Jekyll project does require some technical expertise to address issues that arise
+                    from time to time. However, at StaticPages, we are very happy to help you solve any technical difficulties
+                    you may run into.</p>
+                  <p>All you need is to drop us a note and let us 2 or 3 time slots that work best for your schedule. That is
+                    it!</p>
+                </div>
+              </div>
+            </div>
+            <!-- END accordion__faq-->
+
+            <div class="accordion__faq">
+              <a class="accordion__title p-4" data-toggle="collapse" href="#acc3_3">
+                <i class="fa fa-angle-down mr-3"></i>
+                How do I setup a domain name and Jekyll project to work together?
+              </a>
+              <div id="acc3_3" class="collapse" role="tabpanel" data-parent="#accordion2">
+                <div class="accordion__text">
+                  <p>Even with all the guides and documentation available out there, for an unexperienced site owner the process
+                    still very tedious, error prone and frustrating at best. Oftentimes technical jargon sets you back or
+                    leads to unexpected results wasting your precious time and energy.</p>
+                  <p>Hey, but you're a lucky one! As one of our customers, you can delegate domain setup and configuration to
+                    the expert team at StaticPages. We will take care of an every aspect of the process.</p>
+                </div>
+              </div>
+            </div>
+            <!-- END accordion__faq-->
+
+            <div class="accordion__faq">
+              <a class="accordion__title p-4" data-toggle="collapse" href="#acc4_4">
+                <i class="fa fa-angle-down mr-3"></i>
+                How do I repair my Jekyll project that doesn't work because of an XYZ plugin?
+              </a>
+              <div id="acc4_4" class="collapse" role="tabpanel" data-parent="#accordion2">
+                <div class="accordion__text">
+                  <p>Open-source (aka. OSS) components bring a lot of intrinsic value to a project of any size, however, being
+                    best effort some of these OSS components are either poorly maintained or abandoned by their authors.
+                    Unfortunately this brings risks that usually a site owner would have to either deal with on their own
+                    or outsource to a freelancer.</p>
+                  <p>Luckily, at StaticPages we love, embrace and contibute to OSS, as well as help our customers to maintain
+                    OSS components of their Jekyll projects that are outdated, not working properly, abandoned or need customizations
+                    not available otherwise.</p>
+                </div>
+              </div>
+            </div>
+            <!-- END accordion__faq-->
+
+            <div class="accordion__faq">
+              <a class="accordion__title p-4" data-toggle="collapse" href="#acc5_5">
+                <i class="fa fa-angle-down mr-3"></i>
+                Why amazing XYZ theme for Jekyll is not in your Themes Gallery?
+              </a>
+              <div id="acc5_5" class="collapse" role="tabpanel" data-parent="#accordion2">
+                <div class="accordion__text">
+                  <p>Oops, it might be that you've just found something truly amazing we haven't had a chance to discover yet.
+                    We will be flattered make XYZ theme a part of our ever-growing
+                    <strong>Themes Gallery</strong>. Even though it would take us some time to validate and adopt XYZ theme to the
+                    gallery - your request to support the theme will be prioritized.</p>
+                  <p>Drop us a note where XYZ theme can be found, how soon you might need it in the gallery and we will take
+                    care of the rest!</p>
+                </div>
+              </div>
+            </div>
+            <!-- END accordion__faq-->
+
+            <div class="accordion__faq">
+              <a class="accordion__title p-4" data-toggle="collapse" href="#acc6_6">
+                <i class="fa fa-angle-down mr-3"></i>
+                How do I customize my Jekyll project if writing code is not one of my strengths?
+              </a>
+              <div id="acc6_6" class="collapse" role="tabpanel" data-parent="#accordion2">
+                <div class="accordion__text">
+                  <p>We know that working with the code is intimidating experience and not an easy feat for a person, coming
+                    from a different professional background. However, deep Jekyll expertise is one of our core strength,
+                    professional passion and something that we would love to share with you.</p>
+                  <p>Drop us an email describing your idea, how soon you might need to use it and we will make corresponding
+                    arrangements for you!</p>
+                </div>
+              </div>
+            </div>
+            <!-- END accordion__faq-->
+
+          </div>
+          <!-- END accordion-->
+        </div>
+        <!-- END col-12-->
+      </div>
+      <!-- END row-->
+
+    </div>
+    <!-- END container-->
+  </section>
+
+  <footer>
+    <section id="contact" class="bg-gray-v2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4>Fully-managed platform for Jekyll</h4>
+            <p class="u-my-40 text-justify">
+              StaticPages is the <span class="font-weight-bold">world's 1st</span> fully managed platform for <span class="font-weight-bold">Jekyll projects</span> of any size and budget. Our service offering is a great fit for digital agencies, business owners and entrepreneurs.
+            </p>
+            <form class="form-inline">
+              <div class="input-group box-shadow-v1 u-rounded-50 bg-white u-of-hidden">
+                <div class="input-group-addon bg-white border-0 pl-4 pr-0">
+                  <span class="icon icon-Mail text-primary"></span>
+                </div>
+                <input type="text" class="form-control border-0 p-3" placeholder="Enter your email">
+                <button type="submit" class="input-group-btn btn bg-white">
+                  <span class="icon icon-Arrow text-primary"></span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-2 col-md-6 ml-auto mb-5 mb-lg-0">
+            <h4>Useful Links</h4>
+            <div class="u-h-4 u-w-50 bg-primary rounded mt-3 u-mb-40"></div>
+            <ul class="list-unstyled u-lh-2">
+              <li>
+                <a href="">Pricing </a>
+              </li>
+              <li>
+                <a href="">Contact Us</a>
+              </li>
+              <li>
+                <a href="">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 ml-auto mb-5 mb-lg-0">
+            <h4>Contact Info</h4>
+            <div class="u-h-4 u-w-50 bg-primary rounded mt-3 u-mb-40"></div>
+            <ul class="list-inline social social-rounded social-white mt-4">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/staticpagesio" target="_blank">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="javascript: alert('not implemented');" target="_blank">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/staticpagesio" target="_blank">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://rubygems.org/profiles/staticpagesio" target="_blank">
+                  <i class="fa fa-diamond" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- END row-->
+      </div>
+      <!-- END container-->
+    </section>
+    <!-- END section-->
+
+    <section class="u-py-40">
+      <div class="container">
+        <p class="mb-0 text-center">
+          StaticPages Inc. &copy; Copyright 2018
+        </p>
+      </div>
+    </section>
+  </footer>
+  <!-- END footer-->
+
+  <div class="scroll-top bg-primary text-white box-shadow-v1">
+    <i class="fa fa-angle-down" aria-hidden="true"></i>
+  </div>
+
+  <!--
+// ////////////////////////////////////////////////
+// To Reduce server request and improved page speed drastically all third-party plugin bundle in assets/js/bundle.js
+// If you wanna add those manually bellow is the sequence 
+// ///////////////////////////////////////////////
+-->
+  <!--
+		<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="assets/vendor/popper.js/dist/popper.min.js"></script>
+		<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="assets/vendor/slick-carousel/slick/slick.min.js"></script>
+		<script src="assets/vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+		<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		<script src="assets/vendor/isotope/dist/isotope.pkgd.min.js"></script>
+		<script src="assets/vendor/parallax.js/parallax.min.js"></script>
+		<script src="assets/vendor/wow/dist/wow.min.js"></script>
+		<script src="assets/vendor/vide/dist/jquery.vide.min.js"></script>
+		<script src="assets/vendor/typed.js/lib/typed.min.js"></script>
+		<script src="assets/vendor/appear-master/dist/appear.min.js"></script>
+		<script src="assets/vendor/jquery.countdown/dist/jquery.countdown.min.js"></script>
+		<script src="assets/js/smoothscroll.js"></script>
+-->
+
+  {% javascript "bundle" %}
+  {% javascript "fury" %}
+
+
+</body>
+
+</html>

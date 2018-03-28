@@ -1,0 +1,26 @@
+version: '2'
+services:
+  # Our landing page application
+  landing:
+    network_mode: bridge
+    image: "jekyll/jekyll:3.5.0"
+    command: "/bin/bash"
+    depends_on:
+      - "reverse-proxy"
+    volumes:
+      - "$PWD:/srv/jekyll"
+    environment:
+      - "JEKYLL_ENV=production"
+    labels:
+      - "traefik.backend=landing"
+      - "traefik.frontend.rule=Host:staticpages.local"
+      - "traefik.enable=true"
+
+  reverse-proxy:
+    network_mode: bridge
+    image: "traefik:1.3.8"
+    command: "--debug --defaultentrypoints=http --entrypoints=Name:http Address::80 --docker --docker.watch --docker.exposedbydefault=false"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    ports:
+      - "80:80"
