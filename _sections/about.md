@@ -2,3 +2,18 @@
 title: About
 position: 1
 ---
+<section id="about" class="u-py-md-250 u-flex-center" style="background:#ECF5FE url({% asset_path "startup/hero-banner" %}) no-repeat; background-size:cover; background-position: top center;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7 mb-5 mb-lg-0">
+        <h1 class="display-4 u-fw-600">
+          <span class="text-primary">Static sites</span> are great but managing them is frustrating at best...
+        </h1>
+        <p class="u-fs-22 u-lh-1_8 my-4 text-justify">
+          We fully manage projects powered by <span class="font-weight-bold text-primary">Jekyll</span> for digital agencies, entrepreneurs and business owners - so you can keep focus on creative part and let us to take care of the rest, <span class="font-weight-bold">literally</span>.
+        </p>
+        <a href="" class="btn btn btn-rounded btn-primary u-w-170 u-mt-15">Hey, I'm in!</a>
+      </div>
+    </div>
+  </div>
+</section>

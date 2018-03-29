@@ -2,3 +2,98 @@
 title: Features
 position: 2
 ---
+<section id="features" class="py-5 my-lg-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="h1" id="features">Features</h2>
+        <div class="u-h-4 u-w-50 bg-primary rounded mt-4 u-mb-70 mx-auto"></div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4 u-mt-30">
+        <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+          <img class="u-w-100" src="{% asset_path "svg/file" %}" alt="">
+          <h4 class="u-fs-26 u-my-35">
+            Markdown/HTML
+          </h4>
+          <p class="mb-0">
+            Harness power of Jekyll to get
+            <strong>stunning static sites</strong> from plain-text documents
+            <strong>in minutes</strong> not weeks!
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 u-mt-30">
+        <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+          <img class="u-w-100" src="{% asset_path "svg/layers" %}" alt="">
+          <h4 class="u-fs-26 u-my-35">
+            Themes
+          </h4>
+          <p class="mb-0">
+            Enjoy
+            <strong>endless creativity</strong> of Jekyll open-source community or bring your own
+            <strong>themes</strong>,
+            <strong>plugins</strong> and
+            <strong>customizations</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 u-mt-30">
+        <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+          <img class="u-w-100" src="{% asset_path "svg/alarm-clock" %}" alt="">
+          <h4 class="u-fs-26 u-my-35">
+            Publishing Schedule
+          </h4>
+          <p class="mb-0">
+            Seamless
+            <strong>automation</strong> to publish your content
+            <strong>on a schedule</strong> that fits
+            <strong>your business model</strong>,
+            <strong>time zone</strong> or
+            <strong>events</strong>!
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 u-mt-30">
+        <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+          <img class="u-w-100" src="{% asset_path "svg/swiss-army-knife" %}" alt="">
+          <h4 class="u-fs-26 u-my-35">
+            All-inclusive Support
+          </h4>
+          <p class="mb-0">
+            Enjoy world-class technical support. Our team promptly fixes any <strong>CSS</strong>, <strong>HTML</strong> or <strong>JavaScript</strong> issue with your project.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 u-mt-30">
+        <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+          <img class="u-w-100" src="{% asset_path "svg/transfer" %}" alt="">
+          <h4 class="u-fs-26 u-my-35">
+            Git/SVN/Perforce
+          </h4>
+          <p class="mb-0">
+            Works with
+            <strong>popular source control solutions</strong> and if that's not your case, then drop us a note - we will add
+            <strong>support for yours</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 u-mt-30">
+        <div class="bg-white px-5 u-py-50 u-h-100p rounded border box-shadow-v2--onHover">
+          <img class="u-w-100" src="{% asset_path 'svg/cloudy' %}" alt="">
+          <h4 class="u-fs-26 u-my-35">
+            Docker Containers
+          </h4>
+          <p class="mb-0">
+            We use
+            <strong>Docker</strong> to embrace flexibility of
+            <strong>Jekyll</strong>, support
+            <strong>custom plugins</strong> +
+            <strong>modules</strong> and serve your pages faster.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
