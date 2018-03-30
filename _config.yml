@@ -27,20 +27,25 @@ markdown: "kramdown"
 
 # Defaults
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "faq"
+    values:
+      layout: "faq"
 
 # Plugins
 plugins:
   - jekyll-assets
 
-# Collection
+# Collections
 collections:
   - sections
+  - faq
 
 sass:
   sass_dir: _sass

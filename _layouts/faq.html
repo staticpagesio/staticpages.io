@@ -1,0 +1,11 @@
+<div class="accordion__faq">
+  <a class="accordion__title p-4" data-toggle="collapse" href="#{{ page.uuid }}">
+    <i class="fa fa-angle-down mr-3"></i>
+    {{ page.title }}
+  </a>
+  <div id="{{ page.uuid }}" class="collapse" role="tabpanel" data-parent="#accordion2">
+    <div class="accordion__text">
+      {{ content }}
+    </div>
+  </div>
+</div>
