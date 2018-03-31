@@ -6,14 +6,9 @@
 <body id="top">
   {% include header.html %}
 
-  {% assign sections = site.sections | sort: 'position' %}
-  {% for section in sections %}
-    {{ section }}
+  {% for section in site.sections %}
+    {% include sections/{{ section.uuid }}.html uuid=section.uuid %}
   {% endfor %}
-
-  {% include sections/faq.html title='Frequently Asked Questions' topics=site.faq %}
-
-  {% include footer.html %}
 
   {% include javascripts.html %}
 </body>

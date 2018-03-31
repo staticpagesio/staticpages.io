@@ -1,9 +1,8 @@
 <div class="collapse navbar-collapse" id="navbarNav">
   <ul class="navbar-nav ml-auto">
-    {% assign sections = site.sections | sort: 'position' %}
-    {% for section in sections %}
+    {% for section in site.sections %}
       <li class="nav-item">
-        <a class="nav-link" href="#" data-scrollto="{{ section.title | downcase }}">{{ section.title }}</a>
+        <a class="nav-link" href="#" data-scrollto="{{ section.uuid }}">{{ section.title }}</a>
       </li>
     {% endfor %}
   </ul>

@@ -28,15 +28,26 @@ markdown: "kramdown"
 # Defaults
 defaults:
   - scope:
-      path: ""
       type: "pages"
     values:
       layout: "default"
   - scope:
-      path: ""
       type: "faq"
     values:
       layout: "faq"
+
+# Our custom configuration to define sections layout
+sections:
+  - uuid: about
+    title: "About"
+  - uuid: features
+    title: "Features"
+  - uuid: platform
+    title: "Platform"
+  - uuid: faq
+    title: "FAQ"
+  - uuid: contact
+    title: "Contact"
 
 # Plugins
 plugins:
@@ -44,7 +55,6 @@ plugins:
 
 # Collections
 collections:
-  - sections
   - faq
 
 sass:

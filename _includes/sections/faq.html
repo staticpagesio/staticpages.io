@@ -1,14 +1,14 @@
 <!-- Frequently Asked Questions -->
-<section id="faq" class="py-5 my-lg-5">
+<section id="{{ include.uuid }}" class="py-5 my-lg-5">
   <div class="container">
     <div class="col-12 text-center">
-      <h2 class="h1">{{ include.title | default: "FAQ" }}</h2>
+      <h2 class="h1">Frequently Asked Questions</h2>
       <div class="u-h-4 u-w-50 bg-primary rounded mt-4 u-mb-70 mx-auto"></div>
     </div>
     <div class="row">
       <div class="col-12 mt-4">
         <div id="accordion2" role="tablist" class="bg-white box-shadow-v3">
-          {% assign topics = include.topics | sort: 'uuid' %}
+          {% assign topics = site.faq | sort: 'uuid' %}
           {% for topic in topics %}
             {{ topic }}
           {% endfor %}
