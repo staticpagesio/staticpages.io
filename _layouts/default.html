@@ -6,11 +6,7 @@
 <body id="top">
   {% include header.html %}
 
-  {% for section in site.sections %}
-    {% include sections/{{ section.uuid }}.html uuid=section.uuid %}
-  {% endfor %}
-
-  {% include modal/hey-iamin.html %}
+  {{ content }}
 
   {% include javascripts.html %}
 </body>

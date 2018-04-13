@@ -3,18 +3,27 @@ services:
   # Our landing page application
   landing:
     network_mode: bridge
-    image: "jekyll/jekyll:3.5.0"
-    command: "/bin/bash"
+    image: "c7d686365b54"
+    command: "oxy --rsvp"
     depends_on:
-      - "reverse-proxy"
+      - "builder"
     volumes:
-      - "$PWD:/srv/jekyll"
-    environment:
-      - "JEKYLL_ENV=production"
+      - "$PWD/_site:/src/www"
     labels:
       - "traefik.backend=landing"
       - "traefik.frontend.rule=Host:staticpages.local"
       - "traefik.enable=true"
+
+  # Our landing page builder
+  builder:
+    image: "jekyll/jekyll:3.5.0"
+    command: "./build.sh"
+    depends_on:
+      - "reverse-proxy"
+    environment:
+      - "JEKYLL_ENV=production"
+    volumes:
+      - "$PWD:/srv/jekyll"
 
   reverse-proxy:
     network_mode: bridge

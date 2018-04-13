@@ -6,6 +6,15 @@ jQuery.fn.exists = function () {
 (function(global, $) {
   "use strict";
 
+  // handle modal dismissal
+  $("#count-me-in").on("hidden.bs.modal", function() {
+    // dismiss hint (if any)
+    $("*[data-balloon-visible]", this)
+      .removeAttr("data-balloon-visible data-balloon");
+    // clear input form
+    $(":input", this).val("");
+  });
+
   // port of email validation regex from Ruby on Rails - /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i
   // setup validation for the only form
   $("#hey-iam-in-form").validate({

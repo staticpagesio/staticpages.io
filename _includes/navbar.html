@@ -2,7 +2,7 @@
   <ul class="navbar-nav ml-auto">
     {% for section in site.sections %}
       <li class="nav-item">
-        <a class="nav-link" href="#" data-scrollto="{{ section.uuid }}">{{ section.title }}</a>
+        <a class="nav-link" href="/#{{ section.uuid }}" data-scrollto="{{ section.uuid }}">{{ section.title }}</a>
       </li>
     {% endfor %}
   </ul>

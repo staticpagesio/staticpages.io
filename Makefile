@@ -1,2 +1,5 @@
 run:
-	@docker-compose run landing
+	@docker-compose up
+
+build:
+	@docker-compose run builder

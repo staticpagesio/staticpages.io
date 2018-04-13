@@ -1,22 +1,24 @@
 <div class="modal fade" id="count-me-in" tabindex="-1" role="dialog" aria-labelledby="get-joy-back" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-body p-0">
-        <div class="card box-shadow-v2 bg-white u-of-hidden text-center">
-          <h2 class="bg-primary m-0 py-3 text-white" id="get-joy-back">Get The Joy Back With StaticPages</h2>
-          <form id="hey-iam-in-form" action="" method="POST" class="p-4 p-md-5">
-            <p class="text-justify">
-                Let <span class="font-weight-bold">StaticPages</span> platform and team take care of your <span class="font-weight-bold">Jekyll</span> projects. Join other <span class="font-weight-bold">fearless flyers</span> to be in the <span class="font-weight-bold">1st batch</span> of customers and get <span class="font-weight-bold">exclusive early access</span> to the platform!
-            </p>
-            <div class="input-group u-of-hidden u-mb-20">
-              <input type="text" class="form-control p-3" placeholder="Enter your email">
+      <form id="hey-iam-in-form" action="/rsvp" method="POST">
+        <div class="modal-body p-0">
+          <div class="card box-shadow-v2 bg-white u-of-hidden text-center">
+            <h2 class="bg-primary m-0 py-3 text-white" id="get-joy-back">Get The Joy Back With StaticPages</h2>
+            <div class="p-4 p-md-5">
+              <p class="text-justify pb-4 m-0">
+                  Let <span class="font-weight-bold">StaticPages</span> platform and team take care of your <span class="font-weight-bold">Jekyll</span> projects. Join other <span class="font-weight-bold">fearless flyers</span> to be in the <span class="font-weight-bold">1st batch</span> of customers and get <span class="font-weight-bold">exclusive early access</span> to the platform!
+              </p>
+              <div class="input-group" data-balloon-pos="up" data-balloon-length="large">
+                <input type="email" name="email_address" class="form-control p-3" placeholder="Enter your email" required="true">
+              </div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Yesss!</button>
-      </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Yesss!</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
