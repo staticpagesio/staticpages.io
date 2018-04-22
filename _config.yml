@@ -76,8 +76,8 @@ exclude:
   - Makefile
 
 # Custom HTTP headers
-# webrick:
-#   headers:
-#     # Troy Hunt's "The 6-Step 'Happy Path' To HTTPS"
-#     Strict-Transport-Security: max-age=31536000
-#     Content-Security-Policy: upgrade-insecure-requests
+webrick:
+  headers:
+    # Troy Hunt's "The 6-Step 'Happy Path' To HTTPS"
+    Strict-Transport-Security: max-age=31536000
+    Content-Security-Policy: upgrade-insecure-requests
